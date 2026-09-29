@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Subir imagen a Cloudinary</title>
+</head>
+<body>
+  <h1>Subir imagen</h1>
+
+  <form id="formImagen">
+    <label for="archivo">Seleccionar imagen</label>
+    <input id="archivo" type="file" accept="image/*" required>
+    <button type="submit">Subir imagen</button>
+  </form>
+
+  <p id="mensaje"></p>
+
+  <label for="urlImagen">Enlace obtenido</label>
+  <input id="urlImagen" type="text" readonly style="width: 100%; max-width: 700px;">
+
+  <img id="vistaPrevia" alt="Vista previa de la imagen subida" hidden style="display: block; max-width: 280px; margin-top: 16px;">
+
+  <script src="js/app.js"></script>
+</body>
+</html>
